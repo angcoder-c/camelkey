@@ -34,11 +34,11 @@ import {
 
 export const external = factory()
     .version('0.0.1')
-    .description('CLI Credential Manager')
+    .description('CLI Password Manager')
 
 const main = factory()
     .version('0.0.1')
-    .description('CLI Credential Manager')
+    .description('CLI Password Manager')
 
 // current database general information
 export let currentDB = {

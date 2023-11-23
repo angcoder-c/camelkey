@@ -1,20 +1,29 @@
 {
   "name": "camelkey",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "CLI Password Manager",
+  "main": "./src/index.js",
   "scripts": {
+    "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Angel Chavez",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "chalk": "5.3.0",
     "cli-table": "0.3.11",
     "commander": "11.0.0",
     "figlet": "1.7.0",
     "sqlite3": "5.1.6"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "camelkey": "./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angcoder-c/camelkey.git"
   }
 }

@@ -4,7 +4,7 @@
 
 #### Create database
 ```bash
-$ camelkey create database --name <name> --description <description> --password <password>
+$ camelkey create database --name <name> --description <description> --password <password> --to <directory>
 ```
 
 > `$ camelkey create database -n <name> -d <description> -p <password>`
