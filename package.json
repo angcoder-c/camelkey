@@ -2,9 +2,10 @@
   "name": "camelkey",
   "version": "0.0.1",
   "description": "CLI Password Manager",
+  "access": "public",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "camelkey": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,6 +25,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angcoder-c/camelkey.git"
+    "url": "git://github.com/angcoder-c/camelkey.git"
   }
 }
