@@ -1,5 +1,5 @@
 import readline from "node:readline";
-import { command2args } from "./utils/funcs.js";
+import { command2args, createDirs } from "./utils/funcs.js";
 import { wellcome } from "./utils/commands/config.js";
 import { LocalDB } from "./db.js";
 

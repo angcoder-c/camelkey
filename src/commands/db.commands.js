@@ -19,7 +19,7 @@ export function createDatabaseCommand () {
     .command('database')
     .description('specifies the properties of the database to be created')
     .requiredOption('-n, --name <name>', 'database creation name')
-    .option('-d, --description <description-string>', 'database description', '')
+    .option('-d, --description <description>', 'database description', '')
     .requiredOption('-p, --password <password>', 'database master password')
     .option('--to <directory>', 'directory to create the database')
     .option('--local', 'use the local directory to create database')

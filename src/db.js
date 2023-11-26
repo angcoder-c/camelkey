@@ -1,9 +1,10 @@
 import sqlite3 from 'sqlite3';
+import os from 'node:os';
 import { dbExists, uri, sqlFileData } from './utils/funcs.js';
 
 export class LocalDB {
     constructor() {
-        this._mainDBDir = `${process.cwd()}/db/local`;
+        this._mainDBDir = `${os.homedir()}/.camelkey`;
         this.uri = uri('main', this._mainDBDir)
         let dbexists = dbExists(this.uri)
 

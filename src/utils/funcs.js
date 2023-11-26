@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path';
+import os from 'node:os';
 
 export function sqlFileData(schema) {
     return fs.readFileSync(`./db/${schema}.sql`, 'utf-8');
@@ -56,7 +57,7 @@ export function dbExists(path) {
 }
 
 export function uri(name, directory='') {
-    let local = `${process.cwd()}/db/user`
+    let local = `${os.homedir()}/.camelkey/user`
     let { ext, dir, base } = path.parse(directory ? directory : local)
     let uri = ''
 
@@ -101,3 +102,10 @@ export function command2args(command) {
     return args;
 }
 
+export function createDirs() {
+    let main = `${os.homedir()}\\.camelkey`
+    let user = `${main}\\user`
+    console.log(fs.existsSync(main), fs.existsSync(user))
+    fs.existsSync(main) ? undefined : fs.mkdirSync(main);
+    fs.existsSync(user) ? undefined : fs.mkdirSync(user);
+}

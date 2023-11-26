@@ -16,7 +16,7 @@ export function factory(name = '', usage = '') {
     .configureHelp({
         subcommandTerm: (cmd) => blue(cmd.name()),
         subcommandDescription: (cmd) => blue(cmd.description()),
-        optionTerm: (cmd) => blue(cmd.flags + ', ' + cmd.name()),
+        optionTerm: (cmd) => blue(cmd.flags),
         optionDescription: (cmd) => blue(cmd.description),
         commandUsage: (cmd) => blue(cmd.name() + ' ' + cmd.usage()),
         commandDescription: (cmd) => blue(cmd.description()),
