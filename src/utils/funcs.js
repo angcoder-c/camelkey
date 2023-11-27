@@ -105,7 +105,7 @@ export function command2args(command) {
 export function createDirs() {
     let main = `${os.homedir()}\\.camelkey`
     let user = `${main}\\user`
-    console.log(fs.existsSync(main), fs.existsSync(user))
+
     fs.existsSync(main) ? undefined : fs.mkdirSync(main);
     fs.existsSync(user) ? undefined : fs.mkdirSync(user);
 }
