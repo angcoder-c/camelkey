@@ -20,14 +20,14 @@
 - [Create Entry](#create-entry)
 - [Show Entry](#show-entry)
 - [Show Entries](#show-entries)
-    [Find](#find)
+    - [Find](#find)
 - [Delete Entry](#delete-entry)
 - [Update Entry](#update-entry)
-    [Title](#update-entry-title)
-    [Password](#update-entry-password)
-    [User](#update-entry-user)
-    [Notes](#update-entry-notes)
-    [URL](#update-entry-url)
+    - [Title](#update-entry-title)
+    - [Password](#update-entry-password)
+    - [User](#update-entry-user)
+    - [Notes](#update-entry-notes)
+    - [URL](#update-entry-url)
 
 ## Create Database
 
