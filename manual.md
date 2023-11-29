@@ -51,8 +51,6 @@ camelkey create database -n <name> -d <description> -p <password> --to <director
 
 This command provides flexibility in choosing the storage location for your database by utilizing the `--to` parameter or defaults to the local directory with `--local`. 
 
----
-
 ## Show Databases
 
 Use this command to display all databases stored in the local directory.
@@ -62,8 +60,6 @@ Use this command to display all databases stored in the local directory.
 ```bash
 camelkey show databases
 ```
-
----
 
 ## Open Database
 
@@ -90,7 +86,6 @@ If this command is successful, the following prompt should appear
 camelkey>
 ```
 
----
 ## Show Current Database
 
 Within manager mode you can display data from the current database. If you use the `--password` option, it shows all critical information without sensitivity.
@@ -107,8 +102,6 @@ camelkey> show database --password <password>
 |------------|----------|----------|---------------------------------------------------|
 | password   | `-p`     | ❌       | Master Password registered in the database.       |
 
----
-
 
 ## Delete Database
 
@@ -119,8 +112,6 @@ Within manager mode you can delete the current database.
 ```bash
 camelkey> delete database
 ```
-
----
 
 ## Create Category
 
@@ -138,7 +129,6 @@ camelkey> create category --name <name>
 |------------|----------|----------|---------------------------------------------------|
 | name       | `-n`     | ✅      | Name for the new category                          |
 
----
 
 ## Show Categories
 
@@ -150,7 +140,6 @@ With the following command in manager mode you can list all the categories you h
 camelkey> show categories
 ```
 
----
 
 ## Show Category
 
@@ -168,7 +157,6 @@ camelkey> show category --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`     | ✅      | Category identifier.                             |
 
----
 
 ## Delete Category
 
@@ -186,7 +174,6 @@ camelkey> delete category --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`     | ✅      | Category identifier.                            |
 
----
 
 ## Create Group
 
@@ -206,7 +193,6 @@ camelkey> group --name <name> --notes <notes> --category <category>
 | notes      | `--notes` | ❌      | Aditional information for group.                 |
 | category   | `-c`      | ✅      | Categoty name to stored the new group.           |
 
----
 
 ## Show Groups
 
@@ -224,7 +210,6 @@ camelkey> show groups --category <category>
 |------------|-----------|----------|---------------------------------------------------|
 | category   | `-c`      | ✅      | Name of the category to which the group belongs.   |
 
----
 
 ## Show Group
 
@@ -242,7 +227,6 @@ camelkey> show group --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`   | ✅      | Group identifier.                             |
 
----
 
 ## Delete Group
 
@@ -260,7 +244,6 @@ camelkey> delete group --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`   | ✅      | Group identifier.                             |
 
----
 
 ## Update Group
 
@@ -281,7 +264,6 @@ camelkey> update group notes <notes> --id <id>
 | id         | `--id`   | ✅      | Group identifier.                             |
 | notes      | `<notes>`| ✅      | Text for updating group notes.                |
 
----
 
 ## Create Entry
 
@@ -305,7 +287,6 @@ camelkey> create entry --title <title> --user <username> --password <password> -
 | url        | `--url`  | ❌      | url in which to use the saved credentials.         |
 | notes      | `--notes`| ❌      | Aditional information for entry                    |
 
----
 
 ## Show Entry
 
@@ -323,7 +304,6 @@ camelkey> show entry --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`   | ✅       | Entry identifier.                                |
 
----
 
 ## Show Entries
 
@@ -348,7 +328,6 @@ camelkey> show entries --category <category> --group <group> find --last <n> --f
 | last       | `--last <n>` | ❌      | Specifies an integer number of entries to display.|
 | first      | `--first <n>` | ❌     | Specifies an integer number of entries to display.|
 
----
 
 ## Delete Entry
 
@@ -366,8 +345,6 @@ camelkey> delete entry --id <id>
 |------------|----------|----------|---------------------------------------------------|
 | id         | `--id`   | ✅      | Entry identifier.                             |
 
-
----
 
 ## Update Entry
 
@@ -388,7 +365,6 @@ camelkey> update entry title <title> --id <id>
 | id         | `--id`   | ✅      | Entry identifier.                                 |
 | title      | `<title>`| ✅      | New Title                                         |
 
----
 
 ### Update Entry: password
 
@@ -407,7 +383,6 @@ camelkey> update entry password <password> --id <id>
 | id         | `--id`      | ✅      | Entry identifier.                                 |
 | password   | `<password>`| ✅      | New Password                                      |
 
----
 
 ### Update Entry: user
 
@@ -426,7 +401,6 @@ camelkey> update entry user <user> --id <id>
 | id         | `--id`      | ✅      | Entry identifier.                                 |
 | user       | `<user>`    | ✅      | New User                                          |
 
----
 
 ### Update Entry: notes
 
@@ -445,7 +419,6 @@ camelkey> update entry notes <notes> --id <id>
 | id         | `--id`   | ✅      | Group identifier.                                 |
 | notes      | `<notes>`| ✅      | Text for updating group notes.                    |
 
----
 
 ### Update Entry: url
 

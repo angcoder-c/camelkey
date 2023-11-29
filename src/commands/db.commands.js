@@ -61,7 +61,7 @@ export function showCurrentDatabaseCommand () {
     const program = factory('database');
     
     program
-    .description('show data from current database')
+    .description('display current database information')
     .option('-p, --password <password>', 'database master password')
     .action(async (options, command) => {
         showCurrentDatabase(currentDB.uri, options.password)
@@ -87,7 +87,7 @@ export function openDatabaseCommand (camelkey) {
     const program = factory('open');
     
     program
-    .description('open database management mode')
+    .description('open database manager mode')
     .requiredOption('-db, --database <name>', 'name of the database to be opened')
     .requiredOption('-p, --password <password>', 'database master password')
     .option('--to <directory>', 'directory to create the database')
