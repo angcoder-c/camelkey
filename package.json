@@ -1,6 +1,6 @@
 {
   "name": "camelkey",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "CLI Password Manager",
   "access": "public",
   "main": "./src/index.js",
@@ -8,7 +8,15 @@
     "camelkey": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "commander",
+    "cli",
+    "terminal",
+    "tool",
+    "password",
+    "manager"
+  ],
   "author": "Angel Chavez",
   "type": "module",
   "license": "MIT",
