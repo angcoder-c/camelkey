@@ -1,6 +1,6 @@
 {
   "name": "camelkey",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI Password Manager",
   "access": "public",
   "main": "./src/index.js",
