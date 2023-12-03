@@ -1,4 +1,3 @@
-import { Command } from 'commander';
 import { factory } from './utils/commands/config.js';
 import { 
     createDatabaseCommand, 

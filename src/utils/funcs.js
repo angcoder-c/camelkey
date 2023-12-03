@@ -1,9 +1,13 @@
 import fs from 'fs'
+import { fileURLToPath } from 'url';
 import path from 'path';
 import os from 'node:os';
 
 export function sqlFileData(schema) {
-    return fs.readFileSync(`./db/${schema}.sql`, 'utf-8');
+    const homedir = fileURLToPath(import.meta.url).split('camelkey')[0];
+    const pathSchema = `${homedir}camelkey\\db\\${schema}.sql`;
+
+    return fs.readFileSync(pathSchema, 'utf-8');
 }
 
 export function formatDataValues(data) {
