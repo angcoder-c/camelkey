@@ -117,9 +117,9 @@ export function showEntryCommand() {
     .description('shows the entry indicated by the identifier')
     .requiredOption('--id <id>', 'entry identifier')
     .action(options => {
-        showEntry(currentDB.uri, options.id);
+        showEntry(currentDB.uri, options.id, false);
     })
-
+    program.setOptionValueWithSource('password', undefined)
     return program
 }
 

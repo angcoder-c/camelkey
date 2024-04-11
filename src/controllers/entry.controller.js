@@ -13,13 +13,15 @@ export async function createEntry(uri, data) {
 }
 
 
-export async function showEntry(uri, id) {
+export async function showEntry(uri, id, hidePassword=true) {
     if (!dbExists(uri)) return undefined;
 
     var db = new DB({ directory : uri });
 
+    fields = hidePassword ? ['password'] : []
+
     Entry.getById(db, id, {}, row => {
-        new Display([row].filter(r => r), false, true).show()
+        new Display([row].filter(r => r), false, true).show(hideFields=fields)
     })
 }
 
