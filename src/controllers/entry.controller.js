@@ -18,10 +18,10 @@ export async function showEntry(uri, id, hidePassword=true) {
 
     var db = new DB({ directory : uri });
 
-    fields = hidePassword ? ['password'] : []
-
+    let fields = hidePassword ? ['password'] : []
+    
     Entry.getById(db, id, {}, row => {
-        new Display([row].filter(r => r), false, true).show(hideFields=fields)
+        new Display([row].filter(r => r), false, true).show(fields)
     })
 }
 
